@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ib_blue"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/cover_wt" />
+
+        <ImageButton
+            android:id="@+id/ib_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/blues_wt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_first"
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ib_electronic"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="@dimen/dimen10"
+            android:layout_marginStart="29dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/rock_wt" />
+
+        <ImageButton
+            android:id="@+id/ib_electronic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginLeft="@dimen/dimen10"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/electronic_wt" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_second"
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_reggae"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/jazz"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/reggae_wt" />
+
+        <ImageButton
+            android:id="@+id/jazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/tranparent"
+            android:scaleX="1.2"
+            android:scaleY="1.3"
+            android:src="@mipmap/space_wt" />
+    </RelativeLayout>
+</RelativeLayout>

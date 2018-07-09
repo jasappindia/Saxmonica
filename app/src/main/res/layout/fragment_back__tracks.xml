@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen20"
+    android:layout_height="match_parent"
+    tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+    <LinearLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_weight="1"
+
+        android:layout_marginRight="@dimen/dimen10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="@dimen/dimen5"
+        android:orientation="horizontal"
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/ib_blue"
+            android:layout_marginRight="@dimen/dimen5"
+            android:layout_weight="1"
+            android:background="@drawable/cover" />
+
+        <ImageButton
+            android:id="@+id/ib_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:layout_weight="1"
+            android:background="@drawable/blues" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_first"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/dimen5"
+
+        android:layout_marginRight="@dimen/dimen10"
+
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_rock"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         android:layout_marginRight="@dimen/dimen5"
+           android:background="@drawable/rock" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@+id/ib_electronic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen5"
+              android:background="@drawable/electronic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_second"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginRight="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen5"
+        android:layout_marginBottom="@dimen/dimen5"
+        android:layout_weight="1"
+
+        tools:context="com.musicapplication.fragment.Back_TracksFragment">
+
+        <ImageButton
+            android:id="@+id/ib_reggae"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="5dp"
+
+            android:layout_height="wrap_content"
+             android:background="@drawable/reggae" />
+
+        <ImageButton
+            android:id="@+id/jazz"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="@drawable/spacejuzz" />
+    </LinearLayout>
+</LinearLayout>

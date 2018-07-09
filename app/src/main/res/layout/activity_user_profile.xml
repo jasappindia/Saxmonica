@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backing_tracks_bg"
+    tools:context="com.musicapplication.activity.UserProfileActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_other" />
+
+
+    <include
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/show_profile"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/profile_show_layout">
+
+    </include>
+
+
+    <include
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edit_profile"
+        android:visibility="gone"
+        layout="@layout/profile_edite_screen_layout">
+
+    </include>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

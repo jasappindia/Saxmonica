@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.musicapplication.activity.SignupActivity"
+    tools:showIn="@layout/activity_signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginTop="30dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="38dp" />
+
+
+            <EditText
+                android:id="@+id/edt_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="@dimen/dimen30"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/user"
+                android:imeOptions="actionNext"
+
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen8"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_userName"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff">
+
+            </View>
+
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="@dimen/dimen15"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/email"
+
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen8"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_email"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff">
+
+            </View>
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="15dp"
+
+                android:background="@null"
+                android:ems="10"
+
+
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:padding="@dimen/dimen8"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edt_pass"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff">
+
+            </View>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:drawableRight="@mipmap/arrow_bottom_white"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen8"
+                android:text="@string/age"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:id="@+id/view_age"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_age"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff"></View>
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_age"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:drawableRight="@mipmap/arrow_bottom_white"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen8"
+                android:text="@string/gender"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/view_gender"
+                android:layout_below="@+id/tv_gender"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff"></View>
+
+
+
+            <TextView
+                android:id="@+id/tv_countryId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="15dp"
+                android:background="@null"
+                android:drawableRight="@mipmap/arrow_bottom_white"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen8"
+                android:text="@string/country"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/txt_medium" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_countryId"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:background="#ffffff"></View>
+
+
+            <LinearLayout
+                android:id="@+id/ll_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_countryId"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/tv_stateId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="@dimen/dimen10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/arrow_bottom_white"
+                    android:ems="10"
+                    android:padding="@dimen/dimen8"
+                    android:text="@string/state"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/txt_medium" />
+
+                <TextView
+                    android:id="@+id/tv_cityId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableRight="@mipmap/arrow_bottom_white"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dimen8"
+                    android:text="@string/city"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/txt_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_country"
+                android:layout_marginLeft="@dimen/dimen30"
+                android:layout_marginRight="@dimen/dimen30"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="@dimen/dimen10"
+                    android:layout_weight="1"
+                    android:background="#ffffff"></View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/dimen10"
+                    android:layout_weight="1"
+                    android:background="#ffffff"></View>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_country"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/roundbox"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium2" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

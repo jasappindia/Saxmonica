@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@mipmap/backing_tracks_bg"
+    android:layout_height="wrap_content">
+
+    <com.musicapplication.views.imageView.CircleImageView
+        android:id="@+id/iv_userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/user_icon" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_userImage"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen10"
+        android:maxLength="25"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="Nick"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_large" />
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="New York,United States"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_medium" />
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:layout_marginTop="@dimen/dimen10"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_medium" />
+
+
+</RelativeLayout>

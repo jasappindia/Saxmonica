@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/iv_event_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_event_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen30"
+        android:text="lorem ipsum"
+        android:textAllCaps="true"
+        android:singleLine="true"
+        android:layout_above="@+id/tv_event_description"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_medium2" />
+
+    <TextView
+        android:id="@+id/tv_event_description"
+        android:layout_marginBottom="@dimen/dimen25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen30"
+        android:text="lorem ipsum is basicly is dummy text of the printing and type setting."
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:maxLines="2"
+        android:textSize="@dimen/txt_small" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="files"
+        path="." />
+</paths>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <paths>
+        &lt;!&ndash;<external-files-path
+            name="images"
+            path="Pictures" />
+    &ndash;&gt;
+    &lt;!&ndash;    <files-path name="media"/>&ndash;&gt;
+        <external-path name="my_images"
+            path="Android/data/com.musicapplication/files/Pictures/my_images/"/> />
+        &lt;!&ndash;Uncomment below to share the entire application specific directory &ndash;&gt;
+        &lt;!&ndash;<external-path name="all_dirs" path="."/>&ndash;&gt;
+    </paths>-->

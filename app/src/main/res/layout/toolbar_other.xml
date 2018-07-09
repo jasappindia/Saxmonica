@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+    local:theme="@style/toolbarback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_home"
+            android:layout_width="35dp"
+            android:padding="@dimen/dimen3"
+            android:src="@drawable/ic_arrow"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:text="Gallery"
+            android:textColor="@color/toolbar_text"
+            android:textSize="@dimen/txt_medium2" />
+
+        <ImageView
+            android:id="@+id/iv_edit_profile"
+            android:layout_width="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen10"
+            android:padding="@dimen/dimen3"
+            android:src="@mipmap/ic_edit"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

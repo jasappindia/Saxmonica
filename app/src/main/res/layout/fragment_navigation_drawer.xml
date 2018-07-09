@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backing_tracks_bg"
+    android:focusableInTouchMode="true"
+    android:paddingTop="@dimen/dimen20">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.musicapplication.views.imageView.CircleImageView
+                android:id="@+id/iv_userImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen20"
+                android:padding="@dimen/dimen5"
+                android:src="@mipmap/user_icon" />
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/iv_userImage"
+                android:layout_below="@+id/iv_userImage"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:layout_marginTop="@dimen/dimen10"
+                android:maxLength="25"
+                android:paddingLeft="@dimen/dimen15"
+                android:singleLine="true"
+                android:text="Nick"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_large" />
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_username"
+                android:layout_marginLeft="@dimen/dimen10"
+                android:layout_marginTop="@dimen/dimen10"
+                android:paddingLeft="@dimen/dimen15"
+                android:singleLine="true"
+                android:text="New York,United States"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_medium" />
+            <LinearLayout
+                android:id="@+id/ll_aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address"
+                android:layout_marginTop="@dimen/dimen25"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/dimen2"
+                    android:layout_marginTop="@dimen/dimen2"
+                    android:clickable="true"
+                    android:drawableRight="@mipmap/arrow_bottom_white"
+                    android:paddingBottom="@dimen/dimen10"
+                    android:paddingLeft="@dimen/dimen25"
+                    android:paddingRight="@dimen/dimen10"
+                    android:paddingTop="10dp"
+                    android:text="About Us"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_medium2" />
+
+                <LinearLayout
+                    android:id="@+id/ll_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tv_the_team"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/dimen2"
+                        android:layout_marginTop="@dimen/dimen2"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/dimen10"
+                        android:paddingLeft="@dimen/dimen25"
+                        android:paddingRight="@dimen/dimen10"
+                        android:paddingTop="10dp"
+                        android:text="THE Team"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_medium2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_height"
+                        android:background="@color/divider_color_light"></View>
+                    <TextView
+                        android:id="@+id/tv_ourstory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/dimen2"
+                        android:layout_marginTop="@dimen/dimen2"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/dimen10"
+                        android:paddingLeft="@dimen/dimen25"
+                        android:paddingRight="@dimen/dimen10"
+                        android:paddingTop="10dp"
+                        android:text="Our Story"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_medium2" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divide_height"
+                        android:background="@color/divider_color_light"></View>
+                    <TextView
+                        android:id="@+id/tv_contactus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/dimen2"
+                        android:layout_marginTop="@dimen/dimen2"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/dimen10"
+                        android:paddingLeft="@dimen/dimen25"
+                        android:paddingRight="@dimen/dimen10"
+                        android:paddingTop="10dp"
+                        android:text="Contact us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/txt_medium2" />
+                         </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/drawerList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/ll_aboutus"
+                android:layout_marginTop="@dimen/dimen5" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

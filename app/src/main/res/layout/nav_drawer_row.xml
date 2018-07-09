@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/ivDrawerIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen5" />
+    <View
+        android:background="@color/divider_color_light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divide_height">
+
+    </View>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen2"
+        android:layout_marginBottom="@dimen/dimen2"
+        android:textSize="@dimen/txt_medium2"
+
+        android:textAllCaps="true"
+        android:layout_marginLeft="@dimen/dimen10"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:padding="10dp"
+        android:text="User Name" />
+
+</LinearLayout>
